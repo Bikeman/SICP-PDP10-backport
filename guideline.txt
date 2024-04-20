@@ -1,0 +1,26 @@
+Some guidelines for the conversion:
+
+Overall guideline: 
+==================
+
+The goal is to leave SCHEME in the ITS PiDP-10 emulation unchanged and rather adapt the 
+examples to work with it. This is debatable, one could also try to add features of newer SCHEME to the 
+R2RS (?) version used in the simulated MIT KA (with macros perhaps), but that would be a different project.
+For now let us stick to the historic SCHEME implementation as much as we can.
+
+Instead, the examples from SICP should be re-written as if SICP had been written at the time of ITS.
+
+Some easy conversions
+=====================
+
+Numeric literals
+----------------
+Where necessary, mark numeric literals as decimal with a trailing period
+
+Syntax of define
+----------------
+
+definitits of functions need to be rewritten as (define foo (lambda (....) ....))
+definitions for values other than functions cannot be done with define.
+
+
