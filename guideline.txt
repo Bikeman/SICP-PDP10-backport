@@ -23,4 +23,12 @@ Syntax of define
 definitits of functions need to be rewritten as (define foo (lambda (....) ....))
 definitions for values other than functions cannot be done with define.
 
+Annotations
+-----------
+Notes can be added as comments for clarity, but should be prefixed like this
+
+;; NOTE BACKPORT: Here we add trailing periods to make numeric constants decimal
+;; NOTE BACKPORT: Example output is shown in octal notation 
+
+
 
